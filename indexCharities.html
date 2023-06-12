@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/styleC.css"><script src="https://kit.fontawesome.com/2210e856f1.js" crossorigin="anonymous"></script>
+</head>
+  <body>
+        <header id=header><nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                  <a class="navbar-brand" href="index.html">Green Earth</a>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Supported charities</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="index.html">Donate</a>
+                        </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                          Articles
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index1.html">Fight pollution</a></li>
+                            <li><a class="dropdown-item" href="index2.html">Protect nature</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="index3.html">Protect endangered species</a></li>
+                            <li><a class="dropdown-item" href="index4.html">Animal sanctuaries</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav></header>
+
+        <section id=intro>
+             <div class="container text-center">
+                 <h1 class="display-3"><em>Supported charities</em></h1>
+            </div>
+        </section>
+
+        <section id=content>
+          <article>
+              <p id="charity">
+              </p>
+                  </article>
+        </section>
+        
+
+        <footer>
+            <div class="row row-footer">
+                <div class="col-md-2  col-footer">                                              
+                    <h4 class="name-footer">Green Earth</h4>       
+                </div>
+                <div class="col-md-2  col-footer">                                              
+                    <a href="#"><p>Contacts</p></a>
+                    <a href="#"><p>About us</p></a>
+                    <a href="#"><p>Team</p></a>
+                    <a href="indexCharities.html"><p>Charities</p></a>       
+                </div>
+                
+                <div class="col-md-2 nopadding col-footer">                                              
+                    <a href="index2.html"><p>Why you should protect nature</p></a>
+                    <a href="index3.html"><p>Protection of endangered species</p></a>
+                    <a href="index4.html"><p>Animal sanctuaries</p></a>
+                    <a href="index1.html"><p>Fighting Polution</p></a>       
+                </div>
+                <div class="col-md-2 nopadding col-footer">                                              
+                    <h4>Follow Us</h4>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>      
+                </div>                                         
+            </div>
+        </footer>
+        <script>
+        var c = confirm("Do you want to see the supported charities")
+if(c==true){
+//Масив
+const Charities = ["Greenpeace", "Team Trees", "Show Love", "Ewg", "Pure Earth", "Environmental Working Group", "Earthjustice", "The Sierra Club Foundation"];
+let text = "";
+
+//Цикъл
+for (let i = 0; i < Charities.length; i++) {
+  text += Charities[i] + "<br>" + "<br>";
+}
+
+document.getElementById("charity").innerHTML = text;}
+else {
+  text="You dont get to see" + "<br>" + "the charities" + "<br>" + "<br>" + ":(";
+  document.getElementById("charity").innerHTML = text;;
+}</script>
+
+      
+    
+      
+    <!-- Optional JavaScript -->
+    <script src="Charities.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

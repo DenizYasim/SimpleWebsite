@@ -1,0 +1,73 @@
+#header a{
+    padding:20px;
+    color: white;
+}
+#header .dropdown-menu{
+    background-color: #76c893;
+    
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu a:hover {
+    background-color: #64ac7d !important;
+
+}
+    
+#header .navbar{
+    background-color: #76c893 !important;
+}
+#intro{
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #76c893a4,rgba(0, 128, 128, 0.349)), url('img/img2.jpg');
+    background-size: cover;
+    color: white;
+    
+}
+#intro h1{
+    margin-bottom: 50px;
+    align-items: initial;
+}
+#intro em{
+    color: rgb(189, 247, 95);
+    font-weight: bold;
+}
+section{
+    padding: 20px 30%;
+    font-size: 1.5em;
+}
+#content{
+    background-color: #fefae0;
+}
+#content h2{
+    text-align: center;
+    padding: 30px 0px;
+}
+.row-footer, .col-footer {
+    background-color: #76c893;
+    justify-content: center;
+}
+.col-footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    
+}
+.col-footer a:hover,
+i:hover,
+h4:hover {
+  color: green;
+  transition: ease 0.4s;
+}
+
+.col-footer i {
+  padding: 0 10px;
+  cursor: pointer;
+}
+.name-footer{
+    margin: 0px 20px;
+    padding: 20px;
+}
